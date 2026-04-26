@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Sample App</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #2c3e50; }
+        p { color: #7f8c8d; }
+        .status-badge { display: inline-block; padding: 0.5rem 1rem; background-color: #2ecc71; color: white; border-radius: 20px; font-weight: bold; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python + Flask</h1>
+        <p>This is a sample web application powered by Flask.</p>
+        <div id="status" class="status-badge">Checking API...</div>
+    </div>
+    <script>
+        fetch('/api/status')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('status').innerText = `API: ${data.status} (${data.framework})`;
+            });
+    </script>
+</body>
+</html>
