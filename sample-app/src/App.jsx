@@ -5,10 +5,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Sample App</h1>
+      <h1>Updated Sample App</h1>
+      <p>Welcome to your new React application!</p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          Current count: {count}
         </button>
       </div>
     </div>
