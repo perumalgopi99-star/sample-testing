@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Your Web App</h1>
+            <p class="subtitle">A modern, clean interface ready for your ideas</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Dashboard</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="counter">0</div>
+                        <div class="stat-label">Counter</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="clicks">0</div>
+                        <div class="stat-label">Clicks</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Quick Actions</h2>
+                <div class="actions">
+                    <button class="btn btn-primary" id="incrementBtn">Increment Counter</button>
+                    <button class="btn btn-secondary" id="resetBtn">Reset Counter</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Interactive Input</h2>
+                <div class="input-group">
+                    <input type="text" id="userInput" placeholder="Enter some text...">
+                    <button class="btn btn-primary" id="submitBtn">Submit</button>
+                </div>
+                <div id="output" class="output"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with HTML, CSS & JavaScript</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
