@@ -1,0 +1,6 @@
+{
+  "name": "simple-webapp",
+  "version": "1.0.0",
+  "description": "A simple vanilla web application",
+  "main": "index.html"
+}
