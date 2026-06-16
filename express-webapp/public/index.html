@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Sample App</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f0f2f5; margin: 0; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        button { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        #response { margin-top: 1rem; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Express + Vanilla JS</h1>
+        <p>Simple Fullstack App</p>
+        <button id="fetchBtn">Fetch Data from API</button>
+        <div id="response"></div>
+    </div>
+    <script>
+        document.getElementById('fetchBtn').addEventListener('click', async () => {
+            const res = await fetch('/api/hello');
+            const data = await res.json();
+            document.getElementById('response').innerText = data.message;
+        });
+    </script>
+</body>
+</html>
