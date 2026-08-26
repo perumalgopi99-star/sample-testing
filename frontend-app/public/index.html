@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Frontend</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to My Frontend App</h1>
+      <p class="subtitle">A simple, clean interface</p>
+    </header>
+
+    <main>
+      <section class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>🎨 Modern Design</h3>
+            <p>Clean and responsive layout</p>
+          </div>
+          <div class="feature-card">
+            <h3>⚡ Fast</h3>
+            <p>Optimized for speed</p>
+          </div>
+          <div class="feature-card">
+            <h3>📱 Responsive</h3>
+            <p>Works on all devices</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="interactive">
+        <h2>Try It Out</h2>
+        <div class="button-group">
+          <button onclick="handleClick()" class="btn btn-primary">Click Me</button>
+          <button onclick="toggleTheme()" class="btn btn-secondary">Toggle Theme</button>
+        </div>
+        <p id="message" class="message"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Simple Frontend App. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
