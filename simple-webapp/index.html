@@ -7,8 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple vanilla web application.</p>
+    <div class="container">
+        <header>
+            <h1>Welcome to Simple Web App</h1>
+            <p class="subtitle">A clean and modern frontend</p>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <h2>Get Started</h2>
+                <p>Click the button below to interact with this app.</p>
+                <button id="clickBtn" class="btn">Click Me!</button>
+                <p id="clickCount">Clicks: 0</p>
+            </section>
+
+            <section class="features">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>⚡ Fast</h3>
+                        <p>Lightweight vanilla JavaScript with no heavy dependencies</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎨 Modern</h3>
+                        <p>Clean, responsive design that works on all devices</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📱 Responsive</h3>
+                        <p>Mobile-first approach for optimal viewing experience</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Simple Web App. All rights reserved.</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
